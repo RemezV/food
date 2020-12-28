@@ -33,7 +33,9 @@ function cards() {
         }
       }
         
-      getData("http://localhost:3000/menu").then((data) => {
+      getData("db.json")
+      .then(data => data.menu)
+      .then((data) => {
         data.forEach(({ img, altimg, title, descr, price }) => {
           new MenuCard(
             ".menu__field .container",

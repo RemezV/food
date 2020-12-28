@@ -23,8 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
         currentCounter: "#current",
         slide: ".offer__slide"
     });
-    timer(".timer", '2020-10-30');
+    timer(".timer", '2021-01-30');
     cards();
     calculator();
+    scrolling();
 });
   

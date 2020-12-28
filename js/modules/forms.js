@@ -29,7 +29,7 @@ function forms(formSelector, modalTimerId) {
         const formData = new FormData(form);
         let json = JSON.stringify(Object.fromEntries(formData.entries()));
 
-        postData("http://localhost:3000/requests", json)
+        postData("db.json", json)
             .then((data) => {
             spinner.remove();
             openModalWindow('.modal', modalTimerId);

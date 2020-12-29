@@ -5,6 +5,7 @@ import forms from './modules/forms';
 import modal from './modules/modal';
 import timer from './modules/timer';
 import cards from './modules/cards';
+import scrolling from './modules/scrolling';
 import {openModalWindow} from './modules/modal';
 
 document.addEventListener("DOMContentLoaded", () => {
